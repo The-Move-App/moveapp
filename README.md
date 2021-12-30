@@ -11,17 +11,19 @@ In order to run the code, we need to install an app development environment. For
 # Setting Up The Development Environment: 
 
 We now need to set up the environment for React Native. The Documentation for setting up the environment can be found here: https://reactnative.dev/docs/environment-setup
-
+First:
 ``` npm install -g expo-cli ``` 
 
 
+Second:
 
-expo init MoveApp
+``` expo init MoveApp ```
 
-cd move-app
-npm start # you can also use: expo start
+``` cd move-app ``` 
+``` npm start ```
 
-Must install in terminal:
+
+# Must install in terminal before running the app:
 
 ``` npm install react-native-gesture-handler ```
 
@@ -30,3 +32,8 @@ Must install in terminal:
 ``` npm install react-native-elements ```
 
 ``` npm install @react-navigation/native   ```
+
+Run Expo: 
+``` npm run ios ```
+Or
+``` npm run android ```
