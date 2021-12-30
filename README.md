@@ -21,7 +21,11 @@ cd move-app
 npm start # you can also use: expo start
 
 Must install in terminal:
+
 ``` npm install react-native-gesture-handler ```
+
 ``` npm install react-navigation  ```
+
 ``` npm install react-native-elements ```
+
 ``` npm install @react-navigation/native   ```
