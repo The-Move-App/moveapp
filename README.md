@@ -11,6 +11,7 @@ In order to run the code, we need to install an app development environment. For
 # Setting Up The Development Environment: 
 
 We now need to set up the environment for React Native. The Documentation for setting up the environment can be found here: https://reactnative.dev/docs/environment-setup
+
 ``` npm install -g expo-cli ``` 
 
 
