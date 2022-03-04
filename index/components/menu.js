@@ -2,39 +2,18 @@ import * as React from "react";
 import { Animated, View, TouchableOpacity, StyleSheet } from "react-native";
 import { TabView, SceneMap } from "react-native-tab-view";
 import { Text, Image } from "react-native-elements";
-import { Button, Card, Title, Paragraph } from "react-native-paper";
+import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
+import {
+  CardTitle,
+  CardContent,
+  CardAction,
+  CardButton,
+  CardImage,
+} from "react-native-material-cards";
 import Constants from "expo-constants";
-import { CardList } from 'react-native-card-list';
+
 import FlipCard from "react-native-flip-card";
-
-const cards = [
-  {
-    id: "0",
-    title: "Alpha Phi Alpha",
-    picture: require('./assets/alpha-phi-alpha.jpg'),
-    content: <Text>Alpha Phi Alpha</Text>
-  },
-  {
-    id: "1",
-    title: "National Society of Black Engineers",
-    picture: require('./assets/NSBE-Logo-03.png'),
-    content: <Text>National Society of Black Engineers</Text>
-  },
-  {
-    id: "2",
-    title: "Black Student Alliance",
-    picture: require('./assets/bsa-logo-wide-scaled.jpg'),
-    content: <Text>Black Student Alliance</Text>
-  },
-  {
-    id: "3",
-    title: "Career Services",
-    picture: require('./assets/Career_Services.jpg'),
-    content: <Text>Career Services</Text>
-  }
-]
-
-
+const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 const FirstRoute = () => (
   <>
     <View style={[styles.container, { backgroundColor: "#FFFFFF" }]}>
@@ -53,26 +32,21 @@ const FirstRoute = () => (
         {/* Face Side */}
         <View style={styles.face}>
           <Image
-            source={{
-              uri: "https://binaries.templates.cdn.office.net/support/templates/en-us/lt16412134_quantized.png",
-            }}
-            style={{ marginTop: 75, width: 300, height: 500, borderRadius: 10 }}
+            source={{ uri: "https://binaries.templates.cdn.office.net/support/templates/en-us/lt16412134_quantized.png" }}
+            style={{ marginTop: 75, width: 300, height: 500 }}
           />
-          <Text> </Text>
+          <Text>Event Description.</Text>
         </View>
         {/* Back Side */}
         <View style={styles.back}>
-          <Card style={{ marginTop: 75 }}>
+          <Card style ={{marginTop: 75}}>
             <Card.Content>
               <Title>Event title</Title>
               <Paragraph>Event content</Paragraph>
             </Card.Content>
-            <Card.Cover
-              source={{
-                uri: "https://binaries.templates.cdn.office.net/support/templates/en-us/lt16412134_quantized.png",
-              }}
-              style={{ width: 300, height: 370, borderRadius: 10 }}
-            />
+            <Card.Cover 
+            source={{ uri: "https://binaries.templates.cdn.office.net/support/templates/en-us/lt16412134_quantized.png" }}
+            style={{width: 300, height: 400 }} />
             <Card.Actions>
               <Button>Ignore Event</Button>
               <Button>Add Event</Button>
@@ -85,12 +59,12 @@ const FirstRoute = () => (
   </>
 );
 
-
 const SecondRoute = () => (
   <>
+    
     <View style={[styles.container, { backgroundColor: "#FFFFFF" }]}>
-      <CardList cards={cards} />
-    </View>
+      <Text>Hello.</Text>
+      </View>
   </>
 );
 
