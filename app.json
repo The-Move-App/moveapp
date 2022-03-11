@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "/Users/saidahmed/Documents/mobile-app/MoveApp/src/assets/logo_the_move_FINAL.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

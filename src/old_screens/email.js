@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Icon } from 'react-native-elements'
 import PropTypes from 'prop-types'
 
-import mainColor from './Users/saidahmed/Documents/mobile-app/MoveApp/index/screens/constants.js'
+import mainColor from './Users/saidahmed/Documents/mobile-app/MoveApp/index/screens/constants.js.js.js'
 
 const styles = StyleSheet.create({
   container: {
